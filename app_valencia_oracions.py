@@ -9,9 +9,17 @@ st.markdown(
     """
 <style>
 .stApp {background: linear-gradient(180deg,#fff0f7 0%,#f3eaff 100%);}
-h1,h2,h3 {color:#c2185b;}
+.stApp, .stApp p, .stApp li, .stApp label, .stApp span,
+.stApp [data-testid="stMarkdownContainer"], .stApp [data-testid="stWidgetLabel"] p,
+.stApp [data-testid="stCaptionContainer"] {color:#2d2340;}
+h1,h2,h3, .stApp h1, .stApp h2, .stApp h3 {color:#c2185b !important;}
+.caixa, .caixa * {color:#2d2340 !important;}
 .caixa {background:#ffffffcc;border:2px dashed #f48fb1;border-radius:16px;
         padding:14px 18px;margin:10px 0;font-size:1.15rem;}
+div.stButton > button p, div.stButton > button span {color:white !important;}
+div[data-baseweb="select"] > div {background:#ffffff !important; border:2px solid #f48fb1;}
+div[data-baseweb="select"] * {color:#2d2340 !important;}
+.stApp .estrelles {color:#8e24aa !important;}
 .estrelles {font-size:1.3rem;font-weight:700;color:#8e24aa;}
 div.stButton > button {background:#ec407a;color:white;border-radius:20px;
         font-weight:700;border:none;padding:.4rem 1.2rem;}
